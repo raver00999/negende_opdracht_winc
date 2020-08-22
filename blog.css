@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    list-style: none;
+    height: 500px;
+
+}
+.blogpost {
+    width: 300px; border: 1px solid black;
+}
+.blogpost h1 {
+    padding-left: 4px;
+}
+.blogpost1 {
+    flex-grow: 3;
+}
+.blogpost2 {
+    flex-grow: 0;
+}
+.blogpost3 {
+    flex-grow: 5;
+    align-self: flex-end;
+}
+.blogpost4 {
+    flex-grow: 0;
+}
+.blogpost5 {
+    flex-grow: 5;
+    align-self: center;
+
+}

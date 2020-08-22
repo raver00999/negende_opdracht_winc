@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- hier zet je de code in de head tags -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <title> Recepten </title>
+</head>
+
+<body>
+    <!-- hier zet je de code in de body tags-->
+    <header class="header-background black-border">
+        <nav>
+            <ul>
+                <li><a href="about.html">Over mij</a></li>
+                <li><a href="animals.html">Over onze dieren</a></li>
+                <li><a href="contact.html">Contact opnemen</a></li>
+            </ul>
+        </nav>
+
+        <h1>Welkom op de recepten site</h1>
+
+    </header>
+
+    <main class="main-background">
+        <section class="section-background">
+            <h2>Contactformulier</h2>
+
+            <form name="recepten" method="POST" data-netlify="true">
+                <p>
+                    <label>Je naam:
+                        <br>
+                        <input type="text" name="name" />
+                    </label>
+                </p>
+                <p>
+                    <label>Je mailadres:
+                        <br>
+                        <input type="email" name="email" />
+                    </label>
+                </p>
+                <p>
+                    <label for="telefoonnummer">Telefoonnummer:</label><br>
+                    <input type="tel" id="telefoonnummer" name="telefoonnummer" placeholder="0612345678"
+                        pattern="[0-9]{10}">
+                </p>
+                <p>
+                    <label for="leeftijd">Leeftijd:</label><br>
+                    <input type="number" id="leeftijd" name="leeftijd" min="1" max="150">
+                </p>
+                <p>
+                    <label for="geboortedatum">Geboortedatum:</label><br>
+                    <input type="date" id="geboortedatum" name="geboortedatum">
+                </p>
+                <p>
+                    <input type="radio" id="man" name="geslacht" value="man">
+                    <label for="man">Man</label><br>
+                    <input type="radio" id="vrouw" name="geslacht" value="vrouw">
+                    <label for="vrouw">Vrouw</label><br>
+                    <input type="radio" id="ander" name="geslacht" value="anders">
+                    <label for="ander">Anders</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="keuken1" name="keuken1" value="Frans">
+                    <label for="vehicle1"> Franse keuken</label><br>
+                    <input type="checkbox" id="keuken2" name="keuken2" value="Italiaans">
+                    <label for="vehicle2"> Italiaanse keuken</label><br>
+                    <input type="checkbox" id="keuken3" name="keuken3" value="Spaans">
+                    <label for="vehicle3"> Spaanse keuken</label>
+                    <input type="checkbox" id="keuken4" name="keuken4" value="Arabisch">
+                    <label for="vehicle3"> Arabische keuken</label>
+                </p>
+                <p>
+                    <label for="favkleur">Selecteer favoriete kleur Schort:</label><br>
+                    <input type="color" id="favkleur" name="favkleur">
+                </p>
+                <p>
+                    <label>Biografie:
+                        <br>
+                        <textarea name="bio"></textarea>
+                    </label>
+                </p>
+                <p>
+                    <label for="bestand">Upload een bestand:</label><br>
+                    <input type="file" id="bestand" name="bestand">
+                </p>
+                <p>
+                    <label for="website">URL naar jouw recepten website:</label><br>
+                    <input type="url" id="website" name="website">
+                </p>
+                <p>
+                    <button type="reset">Reset</button>
+                    <button type="submit">Verzenden</button>
+                </p>
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="footer-style">
+
+        <div>
+            <a class="footer-links" href="index.html">Homepage</a>
+            <a class="footer-links" href="blog.html">Blog</a>
+
+            <div class="copyright">Cris 2020 ©</div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
